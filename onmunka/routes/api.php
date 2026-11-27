@@ -9,3 +9,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 Route::get('/characters',[CharactersController::class,'index']);
 Route::get('/characters/{characters}',[CharactersController::class,'show']);
+Route::get('/users',[CharactersController::class,'index']);
+Route::get('/users/{users}',[CharactersController::class,'show']);
